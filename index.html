@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Achilles | Home</title>
+  <style>
+    :root {
+      --bg: #f4efe8;
+      --panel: #fffdf9;
+      --primary: #8a5a2b;
+      --primary-dark: #5e3915;
+      --accent: #d9b98a;
+      --text: #2d241d;
+      --muted: #6f5d51;
+      --line: #e7dcc8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: #1b130f;
+      color: white;
+      border-bottom: 4px solid var(--primary);
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      font-size: 0.96rem;
+    }
+
+    nav a {
+      padding: 8px 12px;
+      border-radius: 999px;
+      transition: 0.2s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: rgba(217, 185, 138, 0.15);
+      color: #f6d9a3;
+    }
+
+    .hero {
+      padding: 42px 0 18px;
+    }
+
+    .hero-card {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 12px 24px rgba(43, 31, 18, 0.08);
+    }
+
+    .hero-text {
+      padding: 38px 32px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.72rem;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 14px;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 3vw, 3.2rem);
+    }
+
+    .hero-text p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      border: 1px solid transparent;
+    }
+
+    .button.primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .button.secondary {
+      background: transparent;
+      border-color: var(--primary);
+      color: var(--primary-dark);
+    }
+
+    .hero-image {
+      min-height: 300px;
+      background: linear-gradient(135deg, rgba(138, 90, 43, 0.15), rgba(138, 90, 43, 0.02)),
+                  url('img/gambar 1.jpeg') center/cover no-repeat;
+    }
+
+    .section {
+      padding: 30px 0 16px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(43, 31, 18, 0.04);
+    }
+
+    .card-image {
+      height: 220px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card-body {
+      padding: 18px 18px 20px;
+    }
+
+    .card-body p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .price {
+      display: inline-block;
+      margin-top: 12px;
+      font-weight: bold;
+      color: var(--primary-dark);
+    }
+
+    footer {
+      background: #1b130f;
+      color: rgba(255,255,255,0.8);
+      padding: 28px 0;
+      margin-top: 32px;
+    }
+
+    @media (max-width: 760px) {
+      .hero-card { grid-template-columns: 1fr; }
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="logo">ACHILLES</div>
+      <nav>
+        <a class="active" href="index.html">Home</a>
+        <a href="produk.html">Produk</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="keranjang.html">Keranjang</a>
+        <a href="hubungi.html">Hubungi</a>
+        <a href="andikaragul.html">Tentang</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="hero-text">
+          <div class="eyebrow">Warisan mitologi</div>
+          <h1>Achilles, legenda yang tak lekang oleh waktu.</h1>
+          <p>
+            Seorang pahlawan dalam epik Yunani yang dikenal karena keberanian, kecepatan,
+            dan semangatnya di medan perang. Kekuatan dan sifatnya masih menjadi simbol
+            keteguhan serta kebanggaan.
+          </p>
+          <div class="cta-row">
+            <a class="button primary" href="produk.html">Lihat Produk</a>
+            <a class="button secondary" href="galeri.html">Lihat Galeri</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-label="Gambar ilustrasi Achilles"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Produk unggulan</h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card-image" style="background-image: url('img/gambar 1.jpeg');"></div>
+          <div class="card-body">
+            <h3>Patung Heroik</h3>
+            <p>Desain klasik dengan sentuhan modern untuk ruang tamu dan galeri.</p>
+            <span class="price">Rp1.250.000</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image" style="background-image: url('img/gambar 2.jpeg');"></div>
+          <div class="card-body">
+            <h3>Poster Koleksi</h3>
+            <p>Poster berkualitas tinggi dengan tema mitologi dan budaya Yunani.</p>
+            <span class="price">Rp350.000</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image" style="background-image: url('img/images.jfif');"></div>
+          <div class="card-body">
+            <h3>Bonus Koleksi</h3>
+            <p>Barang edisi terbatas untuk pecinta sejarah dan seni klasik.</p>
+            <span class="price">Rp520.000</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2026 Achilles Collection. Semua hak dilindungi.
+    </div>
+  </footer>
+</body>
+</html>
